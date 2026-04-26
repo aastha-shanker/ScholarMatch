@@ -1,70 +1,90 @@
-# 🎓 ScholarMatch: Student Similarity & Performance Analyzer
+# 🎓 ScholarMatch
 
-## 🚀 Overview
-
-This project analyzes student performance and finds students most similar to the topper using **cosine similarity**.
-
-It simulates a basic **recommendation system** that can be used by coaching institutes to:
-
-* Identify students similar to toppers
-* Group students by performance patterns
-* Track consistency and trends
+**ScholarMatch** is a Python-based data analysis and student intelligence system that evaluates academic performance using statistics, similarity analysis, and visualization.
 
 ---
 
-## 🧠 Features
+## 🚀 Features
 
-* Calculate total marks
-* Identify topper
-* Compute cosine similarity with topper
-* Rank students by similarity
-* Export results to CSV
+* 📊 **Performance Analysis**
+
+  * Total and average marks calculation
+  * Subject-wise averages
+  * Topper identification
+
+* 📈 **Consistency Detection**
+
+  * Uses standard deviation to measure consistency
+  * Labels students as Highly Consistent / Moderate / Inconsistent
+
+* 🧠 **Student Categorization**
+
+  * High Performer
+  * Average Performer
+  * Needs Improvement
+
+* 🔍 **Similarity Engine**
+
+  * Uses cosine similarity to find students with similar performance patterns
+  * Identifies students closest to the topper
+
+* 📉 **Visualization Dashboard**
+
+  * Marks distribution (histograms)
+  * Subject comparison (bar charts)
+  * Performance vs consistency (scatter plot)
+  * Category distribution (pie chart)
 
 ---
 
-## 🛠 Tech Stack
+## 🛠️ Tech Stack
 
 * Python
 * NumPy
 * Pandas
+* Matplotlib
 
 ---
 
-## 📊 How it works
+## 📁 Project Structure
 
-Each student is treated as a **vector of marks**:
-[Maths, Science, English]
-
-Similarity is calculated using:
-
-Cosine Similarity = (A · B) / (|A| × |B|)
-
----
-
-## ▶️ Run the project
-
-```bash
-pip install -r requirements.txt
-python main.py
+```id="i7b1f8"
+ScholarMatch/
+│
+├── data.csv
+├── analysis.py
+├── final_analysis.csv
+├── student_similarity.csv
+├── plots/
+│   ├── maths_distribution.png
+│   ├── science_distribution.png
+│   ├── english_distribution.png
+│   ├── performance_vs_consistency.png
+│   ├── subject_averages.png
+│   ├── category_distribution.png
+│
+└── README.md
 ```
 
 ---
 
-## 📁 Output
+## 💡 Key Insights
 
-* `student_similarity.csv` → contains similarity scores
+* Identifies toppers and consistent performers
+* Detects similar students using vector-based similarity
+* Provides clear visual understanding of performance trends
+* Helps in academic evaluation and decision-making
 
 ---
 
-## 💡 Future Improvements
+## 🚧 Future Improvements
 
-* Add visualization (graphs)
-* Build web interface
-* Support more subjects
-* Cluster students automatically
+* Add machine learning models (Linear Regression)
+* Build an interactive dashboard (Streamlit)
+* Add real-time student filtering
 
 ---
 
 ## 👩‍💻 Author
 
-Aastha Shanker
+**Aastha Shanker**
