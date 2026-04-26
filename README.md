@@ -52,7 +52,7 @@
 ScholarMatch/
 │
 ├── data.csv
-├── analysis.py
+├── main.py
 ├── final_analysis.csv
 ├── student_similarity.csv
 ├── plots/
